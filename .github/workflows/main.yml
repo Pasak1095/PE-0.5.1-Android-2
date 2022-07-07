@@ -54,11 +54,11 @@ jobs:
           haxelib install hscript --quiet
           haxelib install flixel --quiet
           haxelib run lime setup flixel
-          haxelib git faxe https://github.com/nothingforspecialguy/faxe --quiet
-          haxelib git polymod https://github.com/nothingforspecialguy/polymod.git --quiet
-          haxelib git linc_luajit https://github.com/nothingforspecialguy/linc_luajit-jigsaw.git --quiet
-          haxelib git extension-webview https://github.com/jigsaw-4277821/extension-webview.git --quiet
-          haxelib git AndroidTools https://github.com/nothingforspecialguy/AndroidTools.git --quiet
+          haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
+          haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
+          haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
+          haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
+          haxelib git AndroidTools https://github.com/91ebagacm/AndroidTools.git --quiet
 
       - name: Setup Lime
         run: |
