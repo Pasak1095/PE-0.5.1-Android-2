@@ -35,7 +35,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git openfl https://github.com/mcagabe19/fastfl-9.0.2.git
           haxelib install lime 7.9.0 --quiet
-          haxelib install lime-samples 7.0.0 --quiet
+          haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
