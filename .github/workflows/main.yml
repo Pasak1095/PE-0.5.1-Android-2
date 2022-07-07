@@ -33,7 +33,6 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git openfl https://github.com/mcagabe19/fastfl-9.0.2.git
           haxelib install lime 7.9.0 --quiet
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
@@ -48,17 +47,20 @@ jobs:
           haxelib install box2d 1.2.3 --quiet
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
-          haxelib run lime setup flixel
+          haxelib git openfl https://github.com/mcagabe19/fastfl-9.0.2.git
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
           haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
           haxelib git AndroidTools https://github.com/91ebagacm/AndroidTools.git --quiet
 
+      - name: Setup Flixel
+        run: haxelib run lime setup flixel
+
       - name: Set Versions
         run: |
           haxelib set lime 7.9.0
-          haxelib set lime-samples 7.0.0
+          haxelib set lime-samples 6.2.0
           haxelib set layout 1.2.1
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
@@ -116,9 +118,8 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git openfl https://github.com/mcagabe19/fastfl-9.0.2.git
           haxelib install lime 7.9.0 --quiet
-          haxelib install lime-samples 7.0.0 --quiet
+          haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
@@ -131,17 +132,20 @@ jobs:
           haxelib install box2d 1.2.3 --quiet
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
-          haxelib run lime setup flixel
+          haxelib git openfl https://github.com/mcagabe19/fastfl-9.0.2.git
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
           haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
           haxelib git AndroidTools https://github.com/91ebagacm/AndroidTools.git --quiet
 
+      - name: Setup Flixel
+        run: haxelib run lime setup flixel
+
       - name: Set Versions
         run: |
           haxelib set lime 7.9.0
-          haxelib set lime-samples 7.0.0
+          haxelib set lime-samples 6.2.0
           haxelib set layout 1.2.1
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
