@@ -537,9 +537,8 @@ class WeekEditorState extends MusicBeatState
 		var data:String = Json.stringify(weekFile, "\t");
 		if (data.length > 0)
 		{
-			#if android   
-                        sys.io.File.saveContent(SUtil.getPath() + weekFileName + ".json", data.trim());
-                        android.AndroidTools.toast("File Saved Successfully!!");
+			#if android
+			SUtil.saveContent(weekFileName + ".json", data());
 			#else
 		        _file = new FileReference();
 			_file.addEventListener(Event.COMPLETE, onSaveComplete);

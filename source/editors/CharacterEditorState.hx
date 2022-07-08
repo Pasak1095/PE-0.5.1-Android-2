@@ -1306,8 +1306,7 @@ class CharacterEditorState extends MusicBeatState
 		if (data.length > 0)
 		{
 			#if android
-                        sys.io.File.saveContent(SUtil.getPath() + daAnim + ".json", data.trim());   
-                        android.AndroidTools.toast("File Saved Successfully!!");                     
+                        SUtil.saveContent(daAnim + ".json", data());   
                         #else
 			_file = new FileReference();
 			_file.addEventListener(Event.COMPLETE, onSaveComplete);
