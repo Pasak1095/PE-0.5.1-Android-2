@@ -26,7 +26,16 @@ class Paths
 	inline public static var SOUND_EXT = #if web "mp3" #else "ogg" #end;
 	
 	inline public static var VIDEO_EXT = #if android "html" #else "mp4" #end;//Webview Extension Can Open MP4 by HTML
-
+	
+	#if MODS_ALLOWED
+	#if (haxe >= "4.0.0")
+	public static var customImagesLoaded:Map<String, Bool> = new Map();
+	public static var customSoundsLoaded:Map<String, Sound> = new Map();
+	#else
+	public static var customImagesLoaded:Map<String, Bool> = new Map<String, Bool>();
+	public static var customSoundsLoaded:Map<String, Sound> = new Map<String, Sound>();
+	#end
+	
 	public static var dumpExclusions:Array<String> = [];
         public static var currentTrackedAssets:Map<String, FlxGraphic> = [];
         public static var currentTrackedTextures:Map<String, Texture> = [];
@@ -34,7 +43,6 @@ class Paths
         public static var localTrackedAssets:Array<String> = [];
         
   public static var ignoreModFolders:Array<String> = [
-    #if MODS_ALLOWED
 		'characters',
 		'custom_events',
 		'custom_notetypes',
@@ -48,7 +56,6 @@ class Paths
 		'weeks',
 		'fonts',
 		'scripts'
-		#end
 	];
 
 	/// haya I love you for the base cache dump I took to the max
@@ -149,6 +156,17 @@ class Paths
 		}
 		trace('oh no ' + key + ' is returning null NOOOO');
 		return null;
+	}
+	
+	public static function returnSound(path:String, key:String, ?library:String) {
+		// I hate this so god damn much
+		var gottenPath:String = getPath('$path/$key.$SOUND_EXT', SOUND, library);
+		gottenPath = gottenPath.substring(gottenPath.indexOf(':') + 1, gottenPath.length);
+		// trace(gottenPath);
+		if (!currentTrackedSounds.exists(gottenPath))
+			currentTrackedSounds.set(gottenPath, Sound.fromFile('./' + gottenPath));
+		localTrackedAssets.push(key);
+		return currentTrackedSounds.get(gottenPath);
 	}
 
 	static public var currentModDirectory:String = '';
