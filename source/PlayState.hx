@@ -273,9 +273,8 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
-		#if MODS_ALLOWED
-		Paths.destroyLoadedImages();
-		#end
+		Paths.clearUnusedMemory();
+    Paths.clearStoredMemory();
 
 		// for lua
 		instance = this;
