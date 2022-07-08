@@ -27,6 +27,9 @@ class AchievementsMenuState extends MusicBeatState
 	private var descText:FlxText;
 
 	override function create() {
+                Paths.clearUnusedMemory();
+                Paths.clearStoredMemory();
+
 		#if desktop
 		DiscordClient.changePresence("Achievements Menu", null);
 		#end
