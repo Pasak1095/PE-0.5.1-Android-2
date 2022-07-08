@@ -53,9 +53,8 @@ class StoryMenuState extends MusicBeatState
 
 	override function create()
 	{
-		#if MODS_ALLOWED
-		Paths.destroyLoadedImages();
-		#end
+		Paths.clearUnusedMemory();
+                Paths.clearStoredMemory();
 
 		PlayState.isStoryMode = true;
 		WeekData.reloadWeekFiles(true);
