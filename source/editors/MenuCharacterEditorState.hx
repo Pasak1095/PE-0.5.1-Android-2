@@ -414,8 +414,6 @@ class MenuCharacterEditorState extends MusicBeatState
 
 			#if android
                         SUtil.saveContent(characterName + ".json", data.trim());
-		
-                        Android.Tools.toast("File Saved Successfully!!");
 			#else
 			_file = new FileReference();
 			_file.addEventListener(Event.COMPLETE, onSaveComplete);
