@@ -35,6 +35,7 @@ class Paths
 	public static var customImagesLoaded:Map<String, Bool> = new Map<String, Bool>();
 	public static var customSoundsLoaded:Map<String, Sound> = new Map<String, Sound>();
 	#end
+	#end
 	
 	public static var dumpExclusions:Array<String> = [];
         public static var currentTrackedAssets:Map<String, FlxGraphic> = [];
