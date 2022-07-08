@@ -32,6 +32,24 @@ class Paths
         public static var currentTrackedTextures:Map<String, Texture> = [];
         public static var currentTrackedSounds:Map<String, Sound> = [];
         public static var localTrackedAssets:Array<String> = [];
+        
+  public static var ignoreModFolders:Array<String> = [
+    #if MODS_ALLOWED
+		'characters',
+		'custom_events',
+		'custom_notetypes',
+		'data',
+		'songs',
+		'music',
+		'sounds',
+		'videos',
+		'images',
+		'stages',
+		'weeks',
+		'fonts',
+		'scripts'
+		#end
+	];
 
 	/// haya I love you for the base cache dump I took to the max
 	public static function clearUnusedMemory()
@@ -132,23 +150,6 @@ class Paths
 		trace('oh no ' + key + ' is returning null NOOOO');
 		return null;
 	}
-	
-	public static var ignoreModFolders:Array<String> = [
-		'characters',
-		'custom_events',
-		'custom_notetypes',
-		'data',
-		'songs',
-		'music',
-		'sounds',
-		'videos',
-		'images',
-		'stages',
-		'weeks',
-		'fonts',
-		'scripts'
-	];
-	#end
 
 	static public var currentModDirectory:String = '';
 	static var currentLevel:String;
@@ -156,7 +157,7 @@ class Paths
 	{
 		currentLevel = name.toLowerCase();
 	}
-
+	
 	public static function getPath(file:String, type:AssetType, ?library:Null<String> = null)
 	{
 		if (library != null)
