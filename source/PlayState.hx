@@ -273,9 +273,8 @@ class PlayState extends MusicBeatState
 
 	override public function create()
 	{
-		#if MODS_ALLOWED
-		Paths.destroyLoadedImages();
-		#end
+		Paths.clearUnusedMemory();
+                Paths.clearStoredMemory();
 
 		// for lua
 		instance = this;
@@ -2082,6 +2081,9 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
+                Paths.clearUnusedMemory();
+                Paths.clearStoredMemory();
+
 		/*if (FlxG.keys.justPressed.NINE)
 		{
 			iconP1.swapOldIcon();
