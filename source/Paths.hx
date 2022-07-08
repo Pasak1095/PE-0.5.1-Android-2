@@ -1,9 +1,14 @@
 package;
 
 import flixel.FlxG;
+import flixel.graphics.FlxGraphic;
 import flixel.graphics.frames.FlxAtlasFrames;
+import openfl.display3D.textures.Texture;
+import openfl.display.BitmapData;
+import openfl.system.System;
 import openfl.utils.AssetType;
 import openfl.utils.Assets as OpenFlAssets;
+import openfl.media.Sound;
 import lime.utils.Assets;
 import flixel.FlxSprite;
 #if MODS_ALLOWED
@@ -12,7 +17,6 @@ import sys.FileSystem;
 import flixel.graphics.FlxGraphic;
 import openfl.display.BitmapData;
 #end
-
 import flash.media.Sound;
 
 using StringTools;
@@ -23,14 +27,111 @@ class Paths
 	
 	inline public static var VIDEO_EXT = #if android "html" #else "mp4" #end;//Webview Extension Can Open MP4 by HTML
 
-	#if MODS_ALLOWED
-	#if (haxe >= "4.0.0")
-	public static var customImagesLoaded:Map<String, Bool> = new Map();
-	public static var customSoundsLoaded:Map<String, Sound> = new Map();
-	#else
-	public static var customImagesLoaded:Map<String, Bool> = new Map<String, Bool>();
-	public static var customSoundsLoaded:Map<String, Sound> = new Map<String, Sound>();
-	#end
+	public static var dumpExclusions:Array<String> = [];
+        public static var currentTrackedAssets:Map<String, FlxGraphic> = [];
+        public static var currentTrackedTextures:Map<String, Texture> = [];
+        public static var currentTrackedSounds:Map<String, Sound> = [];
+        public static var localTrackedAssets:Array<String> = [];
+
+	/// haya I love you for the base cache dump I took to the max
+	public static function clearUnusedMemory()
+	{
+		// clear non local assets in the tracked assets list
+		var counter:Int = 0;
+		for (key in currentTrackedAssets.keys())
+		{
+			if (!localTrackedAssets.contains(key) && !dumpExclusions.contains(key))
+			{
+				var obj = currentTrackedAssets.get(key);
+				if (obj != null)
+				{
+					var isTexture:Bool = currentTrackedTextures.exists(key);
+					if (isTexture)
+					{
+						var texture = currentTrackedTextures.get(key);
+						texture.dispose();
+						texture = null;
+						currentTrackedTextures.remove(key);
+					}
+					@:privateAccess
+					if (openfl.Assets.cache.hasBitmapData(key))
+					{
+						openfl.Assets.cache.removeBitmapData(key);
+						FlxG.bitmap._cache.remove(key);
+					}
+					trace('removed $key, ' + (isTexture ? 'is a texture' : 'is not a texture'));
+					obj.destroy();
+					currentTrackedAssets.remove(key);
+					counter++;
+				}
+			}
+		}
+		trace('removed $counter assets');
+		// run the garbage collector for good measure lmfao
+		System.gc();
+	}
+
+        public static function clearStoredMemory(?cleanUnused:Bool = false)
+	{
+		// clear anything not in the tracked assets list
+		@:privateAccess
+		for (key in FlxG.bitmap._cache.keys())
+		{
+			var obj = FlxG.bitmap._cache.get(key);
+			if (obj != null && !currentTrackedAssets.exists(key))
+			{
+				openfl.Assets.cache.removeBitmapData(key);
+				FlxG.bitmap._cache.remove(key);
+				obj.destroy();
+			}
+		}
+
+		// clear all sounds that are cached
+		for (key in currentTrackedSounds.keys())
+		{
+			if (!localTrackedAssets.contains(key) && !dumpExclusions.contains(key) && key != null)
+			{
+				Assets.cache.clear(key);
+				currentTrackedSounds.remove(key);
+			}
+		}	
+		// flags everything to be cleared out next unused memory clear
+		localTrackedAssets = [];
+	}
+
+        public static function returnGraphic(key:String, ?library:String, ?textureCompression:Bool = false)
+	{
+		var path = getPath('images/$key.png', IMAGE, library);
+		if (FileSystem.exists(path))
+		{
+			if (!currentTrackedAssets.exists(key))
+			{
+				var bitmap = BitmapData.fromFile(path);
+				var newGraphic:FlxGraphic;
+				if (textureCompression)
+				{
+					var texture = FlxG.stage.context3D.createTexture(bitmap.width, bitmap.height, BGRA, true, 0);
+					texture.uploadFromBitmapData(bitmap);
+					currentTrackedTextures.set(key, texture);
+					bitmap.dispose();
+					bitmap.disposeImage();
+					bitmap = null;
+					trace('new texture $key, bitmap is $bitmap');
+					newGraphic = FlxGraphic.fromBitmapData(BitmapData.fromTexture(texture), false, key, false);
+				}
+				else
+				{
+					newGraphic = FlxGraphic.fromBitmapData(bitmap, false, key, false);
+					trace('new bitmap $key, not textured');
+				}
+				currentTrackedAssets.set(key, newGraphic);
+			}
+			localTrackedAssets.push(key);
+			return currentTrackedAssets.get(key);
+		}
+		trace('oh no ' + key + ' is returning null NOOOO');
+		return null;
+	}
 	
 	public static var ignoreModFolders:Array<String> = [
 		'characters',
@@ -48,22 +149,6 @@ class Paths
 		'scripts'
 	];
 	#end
-
-	public static function destroyLoadedImages(ignoreCheck:Bool = false) {
-		#if MODS_ALLOWED
-		if(!ignoreCheck && ClientPrefs.imagesPersist) return; //If there's 20+ images loaded, do a cleanup just for preventing a crash
-
-		for (key in customImagesLoaded.keys()) {
-			var graphic:FlxGraphic = FlxG.bitmap.get(key);
-			if(graphic != null) {
-				graphic.bitmap.dispose();
-				graphic.destroy();
-				FlxG.bitmap.removeByKey(key);
-			}
-		}
-		Paths.customImagesLoaded.clear();
-		#end
-	}
 
 	static public var currentModDirectory:String = '';
 	static var currentLevel:String;
