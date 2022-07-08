@@ -40,6 +40,9 @@ class MenuCharacterEditorState extends MusicBeatState
 	var defaultCharacters:Array<String> = ['dad', 'bf', 'gf'];
 
 	override function create() {
+                Paths.clearUnusedMemory();
+                Paths.clearStoredMemory();
+
 		characterFile = {
 			image: 'Menu_Dad',
 			scale: 1,
