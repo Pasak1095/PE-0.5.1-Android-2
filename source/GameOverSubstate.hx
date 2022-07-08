@@ -38,6 +38,9 @@ class GameOverSubstate extends MusicBeatSubstate
 
 	override function create()
 	{
+                Paths.clearUnusedMemory();
+                Paths.clearStoredMemory();
+
 		instance = this;
 		PlayState.instance.callOnLuas('onGameOverStart', []);
 
