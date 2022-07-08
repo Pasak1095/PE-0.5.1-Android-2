@@ -778,7 +778,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 			var splittedImage:Array<String> = imageInputText.text.trim().split('_');
 			var characterName:String = splittedImage[0].toLowerCase().replace(' ', '');
 			#if android
-                        sys.io.File.saveContent(Main.getDataPath() + characterName + ".json", data.trim());   
+                        sys.io.File.saveContent(SUtil.getPath() + characterName + ".json", data.trim());   
                         android.AndroidTools.toast("File Saved Successfully!!");                     
                         #else
 			_file = new FileReference();

@@ -514,7 +514,7 @@ class DialogueEditorState extends MusicBeatState
 		if (data.length > 0)
 		{
                         #if android
-                        sys.io.File.saveContent(Main.getDataPath() + "dialogue.json", data.trim());
+                        sys.io.File.saveContent(SUtil.getPath() + "dialogue.json", data.trim());
                         android.AndroidTools.toast("File Saved Successfully!!");
 			#else
 			_file = new FileReference();
