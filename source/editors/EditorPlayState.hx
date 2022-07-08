@@ -71,6 +71,9 @@ class EditorPlayState extends MusicBeatState
 
 	override function create()
 	{
+                Paths.clearUnusedMemory();
+                Paths.clearStoredMemory();
+
 		instance = this;
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
