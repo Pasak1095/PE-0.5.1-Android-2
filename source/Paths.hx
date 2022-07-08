@@ -35,15 +35,8 @@ class Paths
 	public static var customImagesLoaded:Map<String, Bool> = new Map<String, Bool>();
 	public static var customSoundsLoaded:Map<String, Sound> = new Map<String, Sound>();
 	#end
-	#end
 	
-	public static var dumpExclusions:Array<String> = [];
-        public static var currentTrackedAssets:Map<String, FlxGraphic> = [];
-        public static var currentTrackedTextures:Map<String, Texture> = [];
-        public static var currentTrackedSounds:Map<String, Sound> = [];
-        public static var localTrackedAssets:Array<String> = [];
-        
-  public static var ignoreModFolders:Array<String> = [
+	public static var ignoreModFolders:Array<String> = [
 		'characters',
 		'custom_events',
 		'custom_notetypes',
@@ -58,6 +51,13 @@ class Paths
 		'fonts',
 		'scripts'
 	];
+	#end
+	
+	public static var dumpExclusions:Array<String> = [];
+        public static var currentTrackedAssets:Map<String, FlxGraphic> = [];
+        public static var currentTrackedTextures:Map<String, Texture> = [];
+        public static var currentTrackedSounds:Map<String, Sound> = [];
+        public static var localTrackedAssets:Array<String> = [];
 
 	/// haya I love you for the base cache dump I took to the max
 	public static function clearUnusedMemory()
