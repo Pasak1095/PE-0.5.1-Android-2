@@ -17,7 +17,7 @@ To install LuaJIT do this: `haxelib install linc_luajit` on a Command prompt/Pow
 
 ## Android:
 * mcagabe19 - Re-coder
-* Random - External Storage Support
+* Random. - External Storage Support
 
 ### Special Thanks
 * shubs - New Input System
