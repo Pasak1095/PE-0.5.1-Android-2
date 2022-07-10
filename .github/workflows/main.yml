@@ -8,8 +8,8 @@ on: [push,pull_request,workflow_dispatch]
 # A workflow run is made up of one or 69 jobs that can run sequentially or in parallel
 jobs:
   # This workflow dsoent contain a single job called "build"
-  Android-32:
-    name: Android 32
+  Android-Arm:
+    name: Android Arm
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -85,7 +85,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -final -armv7
+          haxelib run lime build android -final -armv7 -arm64
           rm export/release/android/bin/app/build/outputs/apk/debug/*.json
 
       - name: Publish Artifact
@@ -94,8 +94,8 @@ jobs:
           name: androidBuild32
           path: export/release/android/bin/app/build/outputs/apk/debug
 
-  Android-64:
-    name: Android 64
+  Android-x86:
+    name: Android x86
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -171,7 +171,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -final -arm64
+          haxelib run lime build android -final -32 -64
           rm export/release/android/bin/app/build/outputs/apk/debug/*.json
 
       - name: Publish Artifact
@@ -180,8 +180,8 @@ jobs:
           name: androidBuild64
           path: export/release/android/bin/app/build/outputs/apk/debug
 
-  Android-Debug-32:
-    name: Android Debug 32
+  Android-Debug-Arm:
+    name: Android Debug Arm
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -257,7 +257,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -debug -armv7
+          haxelib run lime build android -debug -armv7 -arm64
           rm export/debug/android/bin/app/build/outputs/apk/debug/*.json
         
       - name: Publish Artifact
@@ -266,8 +266,8 @@ jobs:
           name: androidBuildDebug32
           path: export/debug/android/bin/app/build/outputs/apk/debug
 
-  Android-Debug-64:
-    name: Android Debug 64
+  Android-Debug-x86:
+    name: Android Debug x86
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -343,7 +343,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -debug -arm64
+          haxelib run lime build android -debug -32 -64
           rm export/debug/android/bin/app/build/outputs/apk/debug/*.json
         
       - name: Publish Artifact
