@@ -50,7 +50,7 @@ jobs:
           haxelib install openfl 9.0.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
-          haxelib git linc_luajit https://github.com/mcagabe19/linc_luajit.git --quiet
+          haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
           haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
@@ -136,7 +136,7 @@ jobs:
           haxelib install openfl 9.0.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
-          haxelib git linc_luajit https://github.com/mcagabe19/linc_luajit.git --quiet
+          haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
           haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
@@ -222,7 +222,7 @@ jobs:
           haxelib install openfl 9.0.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
-          haxelib git linc_luajit https://github.com/mcagabe19/linc_luajit.git --quiet
+          haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
           haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
@@ -308,7 +308,7 @@ jobs:
           haxelib install openfl 9.0.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
-          haxelib git linc_luajit https://github.com/mcagabe19/linc_luajit.git --quiet
+          haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
           haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
@@ -394,7 +394,7 @@ jobs:
           haxelib install openfl 9.0.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
-          haxelib git linc_luajit https://github.com/mcagabe19/linc_luajit.git --quiet
+          haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
           haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
@@ -480,7 +480,7 @@ jobs:
           haxelib install openfl 9.0.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
-          haxelib git linc_luajit https://github.com/mcagabe19/linc_luajit.git --quiet
+          haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
           haxelib git extension-webview https://github.com/91ebagacm/extension-webview.git --quiet
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
