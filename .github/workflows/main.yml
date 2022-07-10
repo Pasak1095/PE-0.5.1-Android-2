@@ -85,7 +85,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -final -armv7 -arm64
+          haxelib run lime build android --app-version="4.0.0" -armv7 -arm64
           rm export/release/android/bin/app/build/outputs/apk/debug/*.json
 
       - name: Publish Artifact
@@ -171,7 +171,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -final -32 -64
+          haxelib run lime build android --app-version="4.0.0" -32
           rm export/release/android/bin/app/build/outputs/apk/debug/*.json
 
       - name: Publish Artifact
@@ -257,7 +257,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -debug -armv7 -arm64
+          haxelib run lime build android -debug --app-version="4.0.0" -armv7 -arm64
           rm export/debug/android/bin/app/build/outputs/apk/debug/*.json
         
       - name: Publish Artifact
@@ -343,7 +343,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -debug -32 -64
+          haxelib run lime build android -debug --app-version="4.0.0" -32
           rm export/debug/android/bin/app/build/outputs/apk/debug/*.json
         
       - name: Publish Artifact
