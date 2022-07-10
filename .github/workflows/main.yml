@@ -435,7 +435,7 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: androidBuildDebug32
+          name: androidBuildDebug64
           path: export/debug/android/bin/app/build/outputs/apk/debug
 
   Android-Debug-x86:
