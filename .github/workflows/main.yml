@@ -47,7 +47,7 @@ jobs:
           haxelib install box2d 1.2.3 --quiet
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
-          haxelib git openfl https://github.com/mcagabe19/fastfl-9.0.2.git
+          haxelib install openfl 9.0.0 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -59,6 +59,7 @@ jobs:
 
       - name: Set Versions
         run: |
+          haxelib set openfl 9.0.0
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
           haxelib set layout 1.2.1
@@ -132,7 +133,7 @@ jobs:
           haxelib install box2d 1.2.3 --quiet
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
-          haxelib git openfl https://github.com/mcagabe19/fastfl-9.0.2.git
+          haxelib install openfl 9.0.0 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -144,6 +145,7 @@ jobs:
 
       - name: Set Versions
         run: |
+          haxelib set openfl 9.0.0
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
           haxelib set layout 1.2.1
