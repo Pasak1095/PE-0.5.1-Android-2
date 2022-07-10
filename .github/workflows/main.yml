@@ -263,7 +263,7 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: androidBuildDebug
+          name: androidBuildDebug32
           path: export/debug/android/bin/app/build/outputs/apk/debug
 
   Android-Debug-64:
@@ -349,5 +349,5 @@ jobs:
       - name: Publish Artifact
         uses: actions/upload-artifact@v2.2.4
         with:
-          name: androidBuildDebug
+          name: androidBuildDebug64
           path: export/debug/android/bin/app/build/outputs/apk/debug
