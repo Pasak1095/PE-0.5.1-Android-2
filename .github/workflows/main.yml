@@ -433,7 +433,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -LUA-JIT_86-64 --app-version="4.0.0" -64
+          haxelib run lime build android --app-version="4.0.0" -64
           rm export/release/android/bin/app/build/outputs/apk/debug/*.json
 
       - name: Publish Artifact
