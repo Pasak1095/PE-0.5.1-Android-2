@@ -85,7 +85,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android --app-version="4.0.0" -armv6
+          haxelib run lime build android --app-version="4.0.0" -armv6 -armv6build
           rm export/release/android/bin/app/build/outputs/apk/debug/*.json
 
       - name: Publish Artifact
