@@ -49,6 +49,7 @@ jobs:
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
           haxelib install format 3.4.2 --quiet
+          haxelib install hxp 1.2.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -75,6 +76,7 @@ jobs:
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
           haxelib set format 3.4.2
+          haxelib set hxp 1.2.1
 
       - name: Setup Lime
         run: |
@@ -137,6 +139,7 @@ jobs:
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
           haxelib install format 3.4.2 --quiet
+          haxelib install hxp 1.2.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -163,6 +166,7 @@ jobs:
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
           haxelib set format 3.4.2
+          haxelib set hxp 1.2.1
 
       - name: Setup Lime
         run: |
@@ -225,6 +229,7 @@ jobs:
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
           haxelib install format 3.4.2 --quiet
+          haxelib install hxp 1.2.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -251,6 +256,7 @@ jobs:
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
           haxelib set format 3.4.2
+          haxelib set hxp 1.2.1
 
       - name: Setup Lime
         run: |
@@ -313,6 +319,7 @@ jobs:
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
           haxelib install format 3.4.2 --quiet
+          haxelib install hxp 1.2.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -339,6 +346,7 @@ jobs:
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
           haxelib set format 3.4.2
+          haxelib set hxp 1.2.1
 
       - name: Setup Lime
         run: |
@@ -401,6 +409,7 @@ jobs:
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
           haxelib install format 3.4.2 --quiet
+          haxelib install hxp 1.2.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -427,6 +436,7 @@ jobs:
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
           haxelib set format 3.4.2
+          haxelib set hxp 1.2.1
 
       - name: Setup Lime
         run: |
@@ -489,6 +499,7 @@ jobs:
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
           haxelib install format 3.4.2 --quiet
+          haxelib install hxp 1.2.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -515,6 +526,7 @@ jobs:
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
           haxelib set format 3.4.2
+          haxelib set hxp 1.2.1
 
       - name: Setup Lime
         run: |
@@ -577,6 +589,7 @@ jobs:
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
           haxelib install format 3.4.2 --quiet
+          haxelib install hxp 1.2.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -603,6 +616,7 @@ jobs:
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
           haxelib set format 3.4.2
+          haxelib set hxp 1.2.1
 
       - name: Setup Lime
         run: |
@@ -665,6 +679,7 @@ jobs:
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
           haxelib install format 3.4.2 --quiet
+          haxelib install hxp 1.2.1 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -691,6 +706,7 @@ jobs:
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
           haxelib set format 3.4.2
+          haxelib set hxp 1.2.1
 
       - name: Setup Lime
         run: |
