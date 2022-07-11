@@ -57,7 +57,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel
+        run: haxelib run lime setup flixel --recursive
 
       - name: Set Versions
         run: |
@@ -147,7 +147,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel
+        run: haxelib run lime setup flixel --recursive
 
       - name: Set Versions
         run: |
@@ -237,7 +237,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel
+        run: haxelib run lime setup flixel --recursive
 
       - name: Set Versions
         run: |
@@ -327,7 +327,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel
+        run: haxelib run lime setup flixel --recursive
 
       - name: Set Versions
         run: |
@@ -417,7 +417,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel
+        run: haxelib run lime setup flixel --recursive
 
       - name: Set Versions
         run: |
@@ -507,7 +507,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel
+        run: haxelib run lime setup flixel --recursive
 
       - name: Set Versions
         run: |
@@ -597,7 +597,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel
+        run: haxelib run lime setup flixel --recursive
 
       - name: Set Versions
         run: |
@@ -687,7 +687,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel
+        run: haxelib run lime setup flixel --recursive
 
       - name: Set Versions
         run: |
