@@ -291,7 +291,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib install lime 7.9.0 --quiet
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -347,7 +347,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -LUA-JIT_86-64 --app-version="4.0.0" -64
+          haxelib run lime build android -LUA-JIT_86-64 --app-version="4.0.0" -x64
           rm export/release/android/bin/app/build/outputs/apk/debug/*.json
 
       - name: Publish Artifact
@@ -639,7 +639,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib install lime 7.9.0 --quiet
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -695,7 +695,7 @@ jobs:
 
       - name: Compile
         run: |
-          haxelib run lime build android -debug -LUA-JIT_86-64 --app-version="4.0.0" -64
+          haxelib run lime build android -debug -LUA-JIT_86-64 --app-version="4.0.0" -x64
           rm export/debug/android/bin/app/build/outputs/apk/debug/*.json
         
       - name: Publish Artifact
