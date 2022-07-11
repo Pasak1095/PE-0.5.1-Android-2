@@ -292,7 +292,7 @@ jobs:
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib install lime 7.9.0 --quiet
-          git clone https://github.com/mcagabe19/lime-ndll-x86_64.git
+          git clone https://github.com/mcagabe19/lime-ndll-x86_64.git ~/lime-ndll-x86_64
           mv ~/lime-ndll-x86_64/ndll/Android/* ~/haxelib/lime/7\,9\,0/ndll/Android
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
@@ -642,7 +642,7 @@ jobs:
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib install lime 7.9.0 --quiet
-          git clone https://github.com/mcagabe19/lime-ndll-x86_64.git
+          git clone https://github.com/mcagabe19/lime-ndll-x86_64.git ~/lime-ndll-x86_64
           mv ~/lime-ndll-x86_64/ndll/Android/* ~/haxelib/lime/7\,9\,0/ndll/Android
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
