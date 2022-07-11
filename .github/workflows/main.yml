@@ -33,7 +33,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib git lime https://github.com/91ebagacm/lime.git --recursive
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -57,7 +57,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel --recursive
+        run: haxelib run lime setup flixel
 
       - name: Set Versions
         run: |
@@ -123,7 +123,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib git lime https://github.com/91ebagacm/lime.git --recursive
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -147,7 +147,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel --recursive
+        run: haxelib run lime setup flixel
 
       - name: Set Versions
         run: |
@@ -213,7 +213,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib git lime https://github.com/91ebagacm/lime.git --recursive
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -237,7 +237,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel --recursive
+        run: haxelib run lime setup flixel
 
       - name: Set Versions
         run: |
@@ -303,7 +303,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib git lime https://github.com/91ebagacm/lime.git --recursive
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -327,7 +327,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel --recursive
+        run: haxelib run lime setup flixel
 
       - name: Set Versions
         run: |
@@ -393,7 +393,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib git lime https://github.com/91ebagacm/lime.git --recursive
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -417,7 +417,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel --recursive
+        run: haxelib run lime setup flixel
 
       - name: Set Versions
         run: |
@@ -483,7 +483,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib git lime https://github.com/91ebagacm/lime.git --recursive
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -507,7 +507,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel --recursive
+        run: haxelib run lime setup flixel
 
       - name: Set Versions
         run: |
@@ -573,7 +573,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib git lime https://github.com/91ebagacm/lime.git --recursive
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -597,7 +597,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel --recursive
+        run: haxelib run lime setup flixel
 
       - name: Set Versions
         run: |
@@ -663,7 +663,7 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hxcpp 4.2.1 > /dev/null
-          haxelib git lime https://github.com/91ebagacm/lime.git
+          haxelib git lime https://github.com/91ebagacm/lime.git --recursive
           haxelib install lime-samples 6.2.0 --quiet
           haxelib install layout 1.2.1 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
@@ -687,7 +687,7 @@ jobs:
           haxelib git extension-androidtools https://github.com/91ebagacm/extension-androidtools.git
 
       - name: Setup Flixel
-        run: haxelib run lime setup flixel --recursive
+        run: haxelib run lime setup flixel
 
       - name: Set Versions
         run: |
