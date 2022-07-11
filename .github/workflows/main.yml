@@ -35,7 +35,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git lime https://github.com/91ebagacm/lime.git
           haxelib install lime-samples 6.2.0 --quiet
-          haxelib install layout 1.2.1 --quiet
+          haxelib install layout 1.2.2 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
           haxelib install flixel-addons 2.10.0 --quiet
@@ -48,8 +48,8 @@ jobs:
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
-          haxelib install format 3.4.2 --quiet
-          haxelib install hxp 1.2.1 --quiet
+          haxelib install format 3.5.0 --quiet
+          haxelib install hxp 1.2.2 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -64,7 +64,7 @@ jobs:
           haxelib set openfl 9.0.1
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
-          haxelib set layout 1.2.1
+          haxelib set layout 1.2.2
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
           haxelib set flixel-addons 2.10.0
@@ -75,8 +75,8 @@ jobs:
           haxelib set systools 1.1.0
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
-          haxelib set format 3.4.2
-          haxelib set hxp 1.2.1
+          haxelib set format 3.5.0
+          haxelib set hxp 1.2.2
 
       - name: Setup Lime
         run: |
@@ -125,7 +125,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git lime https://github.com/91ebagacm/lime.git
           haxelib install lime-samples 6.2.0 --quiet
-          haxelib install layout 1.2.1 --quiet
+          haxelib install layout 1.2.2 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
           haxelib install flixel-addons 2.10.0 --quiet
@@ -138,8 +138,8 @@ jobs:
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
-          haxelib install format 3.4.2 --quiet
-          haxelib install hxp 1.2.1 --quiet
+          haxelib install format 3.5.0 --quiet
+          haxelib install hxp 1.2.2 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -154,7 +154,7 @@ jobs:
           haxelib set openfl 9.0.1
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
-          haxelib set layout 1.2.1
+          haxelib set layout 1.2.2
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
           haxelib set flixel-addons 2.10.0
@@ -165,8 +165,8 @@ jobs:
           haxelib set systools 1.1.0
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
-          haxelib set format 3.4.2
-          haxelib set hxp 1.2.1
+          haxelib set format 3.5.0
+          haxelib set hxp 1.2.2
 
       - name: Setup Lime
         run: |
@@ -215,7 +215,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git lime https://github.com/91ebagacm/lime.git
           haxelib install lime-samples 6.2.0 --quiet
-          haxelib install layout 1.2.1 --quiet
+          haxelib install layout 1.2.2 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
           haxelib install flixel-addons 2.10.0 --quiet
@@ -228,8 +228,8 @@ jobs:
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
-          haxelib install format 3.4.2 --quiet
-          haxelib install hxp 1.2.1 --quiet
+          haxelib install format 3.5.0 --quiet
+          haxelib install hxp 1.2.2 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -244,7 +244,7 @@ jobs:
           haxelib set openfl 9.0.1
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
-          haxelib set layout 1.2.1
+          haxelib set layout 1.2.2
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
           haxelib set flixel-addons 2.10.0
@@ -255,8 +255,8 @@ jobs:
           haxelib set systools 1.1.0
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
-          haxelib set format 3.4.2
-          haxelib set hxp 1.2.1
+          haxelib set format 3.5.0
+          haxelib set hxp 1.2.2
 
       - name: Setup Lime
         run: |
@@ -305,7 +305,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git lime https://github.com/91ebagacm/lime.git
           haxelib install lime-samples 6.2.0 --quiet
-          haxelib install layout 1.2.1 --quiet
+          haxelib install layout 1.2.2 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
           haxelib install flixel-addons 2.10.0 --quiet
@@ -318,8 +318,8 @@ jobs:
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
-          haxelib install format 3.4.2 --quiet
-          haxelib install hxp 1.2.1 --quiet
+          haxelib install format 3.5.0 --quiet
+          haxelib install hxp 1.2.2 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -334,7 +334,7 @@ jobs:
           haxelib set openfl 9.0.1
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
-          haxelib set layout 1.2.1
+          haxelib set layout 1.2.2
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
           haxelib set flixel-addons 2.10.0
@@ -345,8 +345,8 @@ jobs:
           haxelib set systools 1.1.0
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
-          haxelib set format 3.4.2
-          haxelib set hxp 1.2.1
+          haxelib set format 3.5.0
+          haxelib set hxp 1.2.2
 
       - name: Setup Lime
         run: |
@@ -395,7 +395,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git lime https://github.com/91ebagacm/lime.git
           haxelib install lime-samples 6.2.0 --quiet
-          haxelib install layout 1.2.1 --quiet
+          haxelib install layout 1.2.2 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
           haxelib install flixel-addons 2.10.0 --quiet
@@ -408,8 +408,8 @@ jobs:
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
-          haxelib install format 3.4.2 --quiet
-          haxelib install hxp 1.2.1 --quiet
+          haxelib install format 3.5.0 --quiet
+          haxelib install hxp 1.2.2 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -424,7 +424,7 @@ jobs:
           haxelib set openfl 9.0.1
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
-          haxelib set layout 1.2.1
+          haxelib set layout 1.2.2
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
           haxelib set flixel-addons 2.10.0
@@ -435,8 +435,8 @@ jobs:
           haxelib set systools 1.1.0
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
-          haxelib set format 3.4.2
-          haxelib set hxp 1.2.1
+          haxelib set format 3.5.0
+          haxelib set hxp 1.2.2
 
       - name: Setup Lime
         run: |
@@ -485,7 +485,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git lime https://github.com/91ebagacm/lime.git
           haxelib install lime-samples 6.2.0 --quiet
-          haxelib install layout 1.2.1 --quiet
+          haxelib install layout 1.2.2 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
           haxelib install flixel-addons 2.10.0 --quiet
@@ -498,8 +498,8 @@ jobs:
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
-          haxelib install format 3.4.2 --quiet
-          haxelib install hxp 1.2.1 --quiet
+          haxelib install format 3.5.0 --quiet
+          haxelib install hxp 1.2.2 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -514,7 +514,7 @@ jobs:
           haxelib set openfl 9.0.1
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
-          haxelib set layout 1.2.1
+          haxelib set layout 1.2.2
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
           haxelib set flixel-addons 2.10.0
@@ -525,8 +525,8 @@ jobs:
           haxelib set systools 1.1.0
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
-          haxelib set format 3.4.2
-          haxelib set hxp 1.2.1
+          haxelib set format 3.5.0
+          haxelib set hxp 1.2.2
 
       - name: Setup Lime
         run: |
@@ -575,7 +575,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git lime https://github.com/91ebagacm/lime.git
           haxelib install lime-samples 6.2.0 --quiet
-          haxelib install layout 1.2.1 --quiet
+          haxelib install layout 1.2.2 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
           haxelib install flixel-addons 2.10.0 --quiet
@@ -588,8 +588,8 @@ jobs:
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
-          haxelib install format 3.4.2 --quiet
-          haxelib install hxp 1.2.1 --quiet
+          haxelib install format 3.5.0 --quiet
+          haxelib install hxp 1.2.2 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -604,7 +604,7 @@ jobs:
           haxelib set openfl 9.0.1
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
-          haxelib set layout 1.2.1
+          haxelib set layout 1.2.2
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
           haxelib set flixel-addons 2.10.0
@@ -615,8 +615,8 @@ jobs:
           haxelib set systools 1.1.0
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
-          haxelib set format 3.4.2
-          haxelib set hxp 1.2.1
+          haxelib set format 3.5.0
+          haxelib set hxp 1.2.2
 
       - name: Setup Lime
         run: |
@@ -665,7 +665,7 @@ jobs:
           haxelib install hxcpp 4.2.1 > /dev/null
           haxelib git lime https://github.com/91ebagacm/lime.git
           haxelib install lime-samples 6.2.0 --quiet
-          haxelib install layout 1.2.1 --quiet
+          haxelib install layout 1.2.2 --quiet
           haxelib install openfl-samples 8.7.0 --quiet
           haxelib install flixel-demos 2.7.3 --quiet
           haxelib install flixel-addons 2.10.0 --quiet
@@ -678,8 +678,8 @@ jobs:
           haxelib install hscript 2.4.0 --quiet
           haxelib install flixel 4.9.0 --quiet
           haxelib install openfl 9.0.1 --quiet
-          haxelib install format 3.4.2 --quiet
-          haxelib install hxp 1.2.1 --quiet
+          haxelib install format 3.5.0 --quiet
+          haxelib install hxp 1.2.2 --quiet
           haxelib git faxe https://github.com/91ebagacm/faxe.git --quiet
           haxelib git polymod https://github.com/91ebagacm/polymod.git --quiet
           haxelib git linc_luajit https://github.com/91ebagacm/linc_luajit.git --quiet
@@ -694,7 +694,7 @@ jobs:
           haxelib set openfl 9.0.1
           haxelib set lime 7.9.0
           haxelib set lime-samples 6.2.0
-          haxelib set layout 1.2.1
+          haxelib set layout 1.2.2
           haxelib set openfl-samples 8.7.0
           haxelib set flixel-demos 2.7.3
           haxelib set flixel-addons 2.10.0
@@ -705,8 +705,8 @@ jobs:
           haxelib set systools 1.1.0
           haxelib set box2d 1.2.3
           haxelib set hscript 2.4.0
-          haxelib set format 3.4.2
-          haxelib set hxp 1.2.1
+          haxelib set format 3.5.0
+          haxelib set hxp 1.2.2
 
       - name: Setup Lime
         run: |
