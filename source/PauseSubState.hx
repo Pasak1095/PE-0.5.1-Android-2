@@ -37,8 +37,8 @@ class PauseSubState extends MusicBeatSubstate
 		if(PlayState.chartingMode)
 		{
 			menuItemsOG.insert(2, 'Toggle Practice Mode');
-			menuItemsOG.insert(3, 'Toggle Botplay');
 		}
+                        menuItemsOG.insert(3, 'Toggle Botplay');
 		menuItems = menuItemsOG;
 
 		for (i in 0...CoolUtil.difficulties.length) {
